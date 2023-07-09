@@ -22,3 +22,4 @@ include "libs/load.php";
 <body>
   <?php load_temp("sidebar.php"); ?>
 </body>
+
