@@ -17,20 +17,23 @@ include "libs/load.php";
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sidebars/">
     <link href="vendor/assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/sidebars.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="vendor/assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/sidebars.js"></script></body>
+    <link href="css/new.css" rel="stylesheet">
   </head>
 </head>
 <body>
 <main class="d-flex flex-nowrap">
   <?php load_temp("sidebar.php"); ?>
-  <div class="d-flex flex-column  p-2 bg-body-tertiary">
-    <div class="container-md">
+  <div class="container d-flex flex-column  p-2 bg-body-tertiary custom-container">
+    <div  class="container container-md ">
+      <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
       Nobis fugiat delectus aliquid fuga, repellendus blanditiis ratione recusandae quaerat, 
       molestias debitis itaque eaque? Fugit, eaque, sunt ratione quam tempore optio accusantium temporibus
       nostrum non distinctio autem! Commodi accusamus cum aliquid ab nisi exercitationem repellat corporis 
-      obcaecati nam. Rem harum asperiores vel!
+      obcaecati nam. Rem harum asperiores vel!</p>
     </div>
   </div>
 </main>
