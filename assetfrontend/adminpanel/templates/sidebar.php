@@ -1,6 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="home" viewBox="0 0 16 16">
-    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trello" viewBox="0 0 16 16">
+  <path d="M14.1 0H1.903C.852 0 .002.85 0 1.9v12.19A1.902 1.902 0 0 0 1.902 16h12.199A1.902 1.902 0 0 0 16 14.09V1.9A1.902 1.902 0 0 0 14.1 0ZM7 11.367a.636.636 0 0 1-.64.633H3.593a.633.633 0 0 1-.63-.633V3.583c0-.348.281-.631.63-.633h2.765c.35.002.632.284.633.633L7 11.367Zm6.052-3.5a.633.633 0 0 1-.64.633h-2.78A.636.636 0 0 1 9 7.867V3.583a.636.636 0 0 1 .633-.633h2.778c.35.002.631.285.631.633l.01 4.284Z"/>
+</svg>
   </symbol>
   <symbol id="plus" viewBox="0 0 16 16">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
@@ -24,9 +26,9 @@
     <hr style="background-color: whitesmoke;color: ghostwhite;height: 5px;">
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
-      <a href="home.php" class="nav-link active" aria-current="page" style="background-color: #0b7b9e;">
+      <a href="dashboard.php" class="nav-link active" aria-current="page" style="background-color: #0b7b9e;">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-          Home
+          Dashboard
         </a>
       </li>
       <a href="view.php" class="nav-link link-body-emphasis" style="color: #dddace;">
@@ -40,11 +42,6 @@
         </a>
       </li>
       <li>
-      </li><li>
-      <a href="profile.php" class="nav-link link-body-emphasis" style="color: #dddace;">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-          Profile
-        </a>
       </li>
     </ul>
     <hr>

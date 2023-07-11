@@ -26,15 +26,76 @@ include "libs/load.php";
 <body>
 <main class="d-flex flex-nowrap">
   <?php load_temp("sidebar.php"); ?>
-  <div class="container d-flex flex-column  p-2 bg-body-tertiary custom-container">
-    <div  class="container container-md ">
-      <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-      Nobis fugiat delectus aliquid fuga, repellendus blanditiis ratione recusandae quaerat, 
-      molestias debitis itaque eaque? Fugit, eaque, sunt ratione quam tempore optio accusantium temporibus
-      nostrum non distinctio autem! Commodi accusamus cum aliquid ab nisi exercitationem repellat corporis 
-      obcaecati nam. Rem harum asperiores vel!</p>
+  <div class="container-md d-flex flex-column  p-2 bg-body-tertiary custom-container">
+    
+
+<div class="container">
+<form>
+
+  <div class="wrapper">
+    <p>Find school</p>
+    <div class="search-container">
+      <input type="text" class="search" placeholder="SchoolID">
+      <input type="text" class="date-from" placeholder="District">
+      <input type="text" class="date-to" placeholder="Taluk">
+      <button type="submit" class="button">Search</button>
     </div>
+  </div>
+  
+  
+</form>
+</div>
+  <div>
+    <div class="card">
+    <img src="path/to/image1.jpg" alt="Card Image 1">
+      <p>About school</p>
+    <div class="button-container">
+    <button>More</button>
+    <button>Doc</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="path/to/image2.jpg" alt="Card Image 2">
+    <p>About school</p>
+    <div class="button-container">
+    <button>More</button>
+    <button>Doc</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="path/to/image3.jpg" alt="Card Image 3">
+    <p>About school</p>
+    <div class="button-container">
+    <button>More</button>
+    <button>Doc</button>
+    </div>
+  </div>
+    <div class="card">
+    <img src="path/to/image3.jpg" alt="Card Image 3">
+      <p>About school</p>
+    <div class="button-container">
+    <button>More</button>
+    <button>Doc</button>
+    </div>
+  </div>
+    <div class="card">
+    <img src="path/to/image3.jpg" alt="Card Image 3">
+      <p>About school</p>
+    <div class="button-container">
+    <button>More</button>
+    <button>Doc</button>
+    </div>
+  </div>
+    <div class="card">
+    <img src="path/to/image3.jpg" alt="Card Image 3">
+      <p>About school</p>
+    <div class="button-container">
+    <button>More</button>
+    <button>Doc</button>
+    </div>
+  </div>
+    
+  </div>
   </div>
 </main>
 </body>
