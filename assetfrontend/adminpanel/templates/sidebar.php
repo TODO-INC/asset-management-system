@@ -17,7 +17,7 @@
 </svg>
 
 <div class="d-flex flex-nowrap">
-<div class="d-flex flex-column flex-shrink-0 p-2 bg-body-tertiary" style="background-color: #002756;width: 230px;">
+<div class=" container-sm d-flex flex-column  p-2 bg-body-tertiary" style="background-color: #002756;width: 230px;">
     <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
     <span class="fs-4" style="color: #c6c3b6;font-family: monospace;">ASSET MANAGER</span>
     </a>

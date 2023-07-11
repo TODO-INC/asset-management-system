@@ -26,15 +26,20 @@ include "libs/load.php";
 <body>
 <main class="d-flex flex-nowrap">
   <?php load_temp("sidebar.php"); ?>
-  <div class="container d-flex flex-column  p-2 bg-body-tertiary custom-container">
-    <div  class="container container-md ">
-      <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-      Nobis fugiat delectus aliquid fuga, repellendus blanditiis ratione recusandae quaerat, 
-      molestias debitis itaque eaque? Fugit, eaque, sunt ratione quam tempore optio accusantium temporibus
-      nostrum non distinctio autem! Commodi accusamus cum aliquid ab nisi exercitationem repellat corporis 
-      obcaecati nam. Rem harum asperiores vel!</p>
+  <div class="container d-flex flex-column text-center p-2 bg-body-tertiary custom-container">
+    <div class="card text-center   custom-card">
+    <div class="card-header">
+      NEW
     </div>
+    <div class="card-body">
+      <!-- <h5 class="card-title">Add</h5> -->
+      <p class="card-text">Create new School ID to add a School</p>
+      <a href="#" class="btn btn-primary">create</a>
+    </div>
+    </div>
+
+
+
   </div>
 </main>
 </body>

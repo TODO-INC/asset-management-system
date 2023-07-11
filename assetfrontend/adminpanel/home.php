@@ -26,7 +26,7 @@ include "libs/load.php";
 <body>
 <main class="d-flex flex-nowrap">
   <?php load_temp("sidebar.php"); ?>
-  <div class="container d-flex flex-column  p-2 bg-body-tertiary custom-container">
+  <div class="container-md d-flex flex-column  p-2 bg-body-tertiary custom-container">
     <div  class="container container-md ">
       <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
