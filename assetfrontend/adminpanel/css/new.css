@@ -1,0 +1,17 @@
+.custom-container {
+    border: 5px solid #035b7a; /* Border color */
+    padding: 20px; /* Padding around the content */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.custom-container p{
+    color: #0b7b9e;
+}
+
+.custom-card {
+    width: 700px;
+    margin-top: 100px;
+    margin-left: 125px;
+    /* margin: 0 auto; */
+}
