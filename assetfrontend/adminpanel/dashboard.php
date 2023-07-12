@@ -114,14 +114,14 @@ include "libs/load.php";
                   <canvas id="myBarChart" width="100" height="50"></canvas>
                 </div>
                 <div class="col-sm-4 text-center my-auto">
-                  <div class="h4 mb-0 text-primary">$34,693</div>
-                  <div class="small text-muted">YTD Revenue</div>
+                  <div class="h4 mb-0 text-primary">YEAR</div>
+                  <div class="small text-muted">794</div>
                   <hr>
-                  <div class="h4 mb-0 text-warning">$18,474</div>
-                  <div class="small text-muted">YTD Expenses</div>
+                  <div class="h4 mb-0 text-warning">MONTH</div>
+                  <div class="small text-muted">28</div>
                   <hr>
-                  <div class="h4 mb-0 text-success">$16,219</div>
-                  <div class="small text-muted">YTD Margin</div>
+                  <div class="h4 mb-0 text-success">TODAY</div>
+                  <div class="small text-muted">7</div>
                 </div>
               </div>
             </div>
@@ -139,7 +139,7 @@ include "libs/load.php";
                 <div class="media">
                   <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
                   <div class="media-body">
-                    <strong>ABC Schools</strong>updated ground details..
+                    <strong>ABC Schools </strong>updated ground details..
                     <div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ include "libs/load.php";
                 <div class="media">
                   <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
                   <div class="media-body">
-                    <strong>XYZ School</strong>signed up using School ID
+                    <strong>XYZ School </strong>signed up using School ID
                     <div class="text-muted smaller">Today at 4:37 PM - 1hr ago</div>
                   </div>
                 </div>
