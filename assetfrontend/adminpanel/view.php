@@ -31,21 +31,20 @@ include "libs/load.php";
 
 <div class="container">
 <form>
-
   <div class="wrapper">
     <p>Find school</p>
     <div class="search-container">
       <input type="text" class="search" placeholder="SchoolID">
       <input type="text" class="date-from" placeholder="District">
       <input type="text" class="date-to" placeholder="Taluk">
-      <button type="submit" class="button">Search</button>
+      <button type="submit" class="btn btn-primary">Search</button>
     </div>
   </div>
   
   
 </form>
 </div>
-  <div>
+  <div class="container">
     <div class="card">
     <img src="path/to/image1.jpg" alt="Card Image 1">
       <p>About school</p>
