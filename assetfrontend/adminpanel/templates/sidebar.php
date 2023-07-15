@@ -22,7 +22,7 @@
 <div class=" container-sm d-flex flex-column  p-2 bg-body-tertiary custom-sidebar">
 
     <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-    <span class="custom-title" >ASSET MANAGER</span>
+    <span class="custom-title" >ASSET-MANAGER</span>
     </a>
     <hr style="background-color: whitesmoke;color: ghostwhite;height: 5px;">
     <ul class="nav nav-pills flex-column mb-auto">

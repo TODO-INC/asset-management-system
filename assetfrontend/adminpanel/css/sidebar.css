@@ -55,12 +55,13 @@
 .custom-sidebar{
   background-color: #002756;
   font-family: 'League Spartan';
+  font-size: 20px;
   width: 230px;
 }
 .custom-title{
   font-family: 'Reem Kufi';
   color: #dddcae;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 200;
 }
 

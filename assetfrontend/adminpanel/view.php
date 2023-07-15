@@ -33,65 +33,43 @@ include "libs/load.php";
   <div class="container-md d-flex flex-column  p-2 bg-body-tertiary custom-container">
     
 
-<div class="container">
+<div class="container custom-container">
   <div class="container search-bar-container ">
 <form>
   <div class="wrapper searchbar-custom">
-    <p>Find school</p>
+    <div class="navbar"></div>
+    <div class="navbar"></div>
     <div class="search-container">
-      <input type="text" class="search" placeholder="SchoolID">
+      <input type="text" class="search" placeholder="SCHOOL ID">
       <input type="text" class="date-from" placeholder="District">
       <input type="text" class="date-to" placeholder="Taluk">
-      <button type="submit" class="btn btn-primary">Search</button>
+      <button type="submit" class="btn btn-bd-modal-custom">Search</button>
     </div>
   </div>
 </form>
   </div>
 </div>
+
   <div class="container">
-    <div class="card">
+    <div class="card custom-card">
     <img src="resources\school.jpg" alt="Card Image 1">
-      <p>About school</p>
+      <p>ABC School</p>
     <div class="button-container">
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">More</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#doc">Doc</button>
     </div>
   </div>
-  <div class="card">
+  <div class="card custom-card">
     <img src="resources\school.jpg" alt="Card Image 2">
-    <p>About school</p>
+    <p>XYZ School</p>
     <div class="button-container">
     <button>More</button>
     <button>Doc</button>
     </div>
   </div>
-  <div class="card">
+  <div class="card custom-card">
     <img src="resources\school.jpg" alt="Card Image 3">
-    <p>About school</p>
-    <div class="button-container">
-    <button>More</button>
-    <button>Doc</button>
-    </div>
-  </div>
-    <div class="card">
-    <img src="resources\school.jpg" alt="Card Image 3">
-      <p>About school</p>
-    <div class="button-container">
-    <button>More</button>
-    <button>Doc</button>
-    </div>
-  </div>
-    <div class="card">
-    <img src="resources\school.jpg" alt="Card Image 3">
-      <p>About school</p>
-    <div class="button-container">
-    <button>More</button>
-    <button>Doc</button>
-    </div>
-  </div>
-    <div class="card">
-    <img src="resources\school.jpg" alt="Card Image 3">
-      <p>About school</p>
+    <p>IJK School</p>
     <div class="button-container">
     <button>More</button>
     <button>Doc</button>
@@ -159,14 +137,14 @@ include "libs/load.php";
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion accordion-flush" id="accordionFlush">
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-        Accordion Item #1
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+      Building A
       </button>
     </h2>
-    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
       <div class="accordion-body">
               <embed
           src="resources/document.pdf"
@@ -179,11 +157,11 @@ include "libs/load.php";
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-        school2
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+        Building B
       </button>
     </h2>
-    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
       <div class="accordion-body">
       <embed
           src="resources/document.pdf"
@@ -196,11 +174,11 @@ include "libs/load.php";
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-        Accordion Item #3
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseTwo">
+      Building C
       </button>
     </h2>
-    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
       <div class="accordion-body">
       <embed
           src="resources/document.pdf"
@@ -216,7 +194,6 @@ include "libs/load.php";
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
       </div>
     </div>
   </div>
