@@ -2,11 +2,17 @@ body {
     font: 16px Arial, Verdana, Tahoma, Sans-serif;
   }
   
-  .container {
+  .container-md {
     width: 852px;
-    background: #0b7b9e;
     margin: 0 auto;
     padding: 16px;
+  }
+  .search-bar-container{
+    background-color: #0b7b9e;
+    height: 105px;
+  }
+  .search-bar-custom{
+    color: aliceblue;
   }
   
   .wrapper {

@@ -19,6 +19,10 @@ include "libs/load.php";
     <link href="css/sidebars.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="vendor/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Reem Kufi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
     <script src="../js/sidebars.js"></script></body>
     <link href="css/view.css" rel="stylesheet">
   </head>
@@ -30,8 +34,9 @@ include "libs/load.php";
     
 
 <div class="container">
+  <div class="container search-bar-container ">
 <form>
-  <div class="wrapper">
+  <div class="wrapper searchbar-custom">
     <p>Find school</p>
     <div class="search-container">
       <input type="text" class="search" placeholder="SchoolID">
@@ -40,13 +45,12 @@ include "libs/load.php";
       <button type="submit" class="btn btn-primary">Search</button>
     </div>
   </div>
-  
-  
 </form>
+  </div>
 </div>
   <div class="container">
     <div class="card">
-    <img src="image\school.jpg" alt="Card Image 1">
+    <img src="resources\school.jpg" alt="Card Image 1">
       <p>About school</p>
     <div class="button-container">
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">More</button>
@@ -54,7 +58,7 @@ include "libs/load.php";
     </div>
   </div>
   <div class="card">
-    <img src="image\school.jpg" alt="Card Image 2">
+    <img src="resources\school.jpg" alt="Card Image 2">
     <p>About school</p>
     <div class="button-container">
     <button>More</button>
@@ -62,7 +66,7 @@ include "libs/load.php";
     </div>
   </div>
   <div class="card">
-    <img src="image\school.jpg" alt="Card Image 3">
+    <img src="resources\school.jpg" alt="Card Image 3">
     <p>About school</p>
     <div class="button-container">
     <button>More</button>
@@ -70,7 +74,7 @@ include "libs/load.php";
     </div>
   </div>
     <div class="card">
-    <img src="image\school.jpg" alt="Card Image 3">
+    <img src="resources\school.jpg" alt="Card Image 3">
       <p>About school</p>
     <div class="button-container">
     <button>More</button>
@@ -78,7 +82,7 @@ include "libs/load.php";
     </div>
   </div>
     <div class="card">
-    <img src="image\school.jpg" alt="Card Image 3">
+    <img src="resources\school.jpg" alt="Card Image 3">
       <p>About school</p>
     <div class="button-container">
     <button>More</button>
@@ -86,7 +90,7 @@ include "libs/load.php";
     </div>
   </div>
     <div class="card">
-    <img src="image\school.jpg" alt="Card Image 3">
+    <img src="resources\school.jpg" alt="Card Image 3">
       <p>About school</p>
     <div class="button-container">
     <button>More</button>
@@ -165,7 +169,7 @@ include "libs/load.php";
     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
       <div class="accordion-body">
               <embed
-          src="document.pdf"
+          src="resources/document.pdf"
           type="application/pdf"
           width="100%"
           height="100%"
@@ -182,7 +186,7 @@ include "libs/load.php";
     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
       <div class="accordion-body">
       <embed
-          src="document.pdf"
+          src="resources/document.pdf"
           type="application/pdf"
           width="100%"
           height="100%"
@@ -199,7 +203,7 @@ include "libs/load.php";
     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
       <div class="accordion-body">
       <embed
-          src="document.pdf"
+          src="resources/document.pdf"
           type="application/pdf"
           width="100%"
           height="100%"
