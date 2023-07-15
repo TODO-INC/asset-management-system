@@ -18,6 +18,8 @@ include "libs/load.php";
     <link href="vendor/assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/sidebars.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Reem Kufi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
     <script src="vendor/assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/sidebars.js"></script></body>
     <link href="css/new.css" rel="stylesheet">
@@ -29,17 +31,17 @@ include "libs/load.php";
     <div class="container d-flex flex-column text-center p-2 bg-body-tertiary custom-container">
       <!-- CARD ONE -->
       <div class="card text-center custom-card">
-        <div class="card-header">NEW</div>
-        <div class="card-body">
+        <div class="card-header card-new-header">NEW</div>
+        <div class="card-body card-new-body">
           <p class="card-text">Create new School ID to add a School</p>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">create</button>
+          <button type="button" class="btn btn-bd-card-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">create</button>
           <!-- Modal for "Create" -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header modal-header-custom">
                   <h1 class="modal-title fs-5" id="exampleModalLabel">Create</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color:white" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                   <form>
@@ -61,19 +63,19 @@ include "libs/load.php";
       </div>
     <!-- CARD TWO -->
     <div class="card text-center custom-card">
-      <div class="card-header">Verification</div>
-      <div class="card-body">
+      <div class="card-header card-new-header">VERIFY</div>
+      <div class="card-body card-new-body">
         <p class="card-text">Update or Verify School ID to add a School</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verify">verify</button>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#update">update</button>
+        <button type="button" class="btn btn-bd-card-custom" data-bs-toggle="modal" data-bs-target="#verify">verify</button>
+        <button type="button" class="btn btn-bd-card-custom" data-bs-toggle="modal" data-bs-target="#update">update</button>
         
         <!-- Modal for "Update" -->
         <div class="modal fade" id="update" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-              <div class="modal-header">
+              <div class="modal-header modal-header-custom">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">UPDATE</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" style="background-color:white" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <div class="accordion accordion-flush" id="accordionFlushTwo">
@@ -152,9 +154,9 @@ include "libs/load.php";
         <div class="modal fade" id="verify" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-              <div class="modal-header">
+              <div class="modal-header modal-header-custom">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Verify</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color:white" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <div class="accordion accordion-flush" id="accordionFlushOne">
