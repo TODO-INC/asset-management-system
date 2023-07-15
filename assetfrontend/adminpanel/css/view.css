@@ -31,17 +31,7 @@ body {
     height: 30px;
   }
   
-  .button {
-    padding: 8px 16px;
-    min-height: 48px;
-    min-width: 10px;
-    word-wrap: nowrap;
-    background: #dddace;
-    color: #212121;
-    border: 1px solid #fff;
-    border-radius: 5px;
-  }
-  
+    
   input {
       order: 0;
       align-self: auto;  
@@ -69,15 +59,17 @@ body {
   .card {
         margin-left:10%;
         margin-top:5%;
-        width: 300px;
+        width: 250px;
         height: 350px;
-        border: 1px solid #00447c;
+        border: 1px solid #0688f3;
+        border-width: 2px;
         padding: 20px;
         border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 4px rgba(30, 60, 227, 0.1);
         display: inline-block;
         margin-right: 20px;
         margin-bottom: 20px;
+        
       }
   
       .card img {
