@@ -1,10 +1,101 @@
-.custom-container {
-    border: 5px solid #035b7a; /* Border color */
-    padding: 20px; /* Padding around the content */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
-}
-
-.custom-container p{
-    color: #0b7b9e;
-}
+body {
+    font: 16px Arial, Verdana, Tahoma, Sans-serif;
+  }
+  
+  .container {
+    width: 852px;
+    background: #0b7b9e;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  
+  .wrapper {
+    margin: 8px 0;
+  }
+  
+  .search-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+  }
+  
+  input {
+    min-width: 20px;
+    padding: 8px;
+    margin: 0 4px 0 0;
+    border: 1px solid #666;
+    border-radius: 5px;
+    height: 30px;
+  }
+  
+    
+  input {
+      order: 0;
+      align-self: auto;  
+  }
+  
+  .search {
+    flex: 2 1 auto;
+  }
+  
+  .date-from {
+    flex: 1 1 auto;
+  }
+  
+  .date-to {
+    flex: 1 1 auto;
+  }
+  
+  .button {
+      order: 4;
+      flex: 0 1 auto;
+      align-self: auto;
+  }
+  
+  
+  .card {
+        margin-left:10%;
+        margin-top:5%;
+        width: 250px;
+        height: 350px;
+        border: 1px solid #0688f3;
+        border-width: 2px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(30, 60, 227, 0.1);
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        
+      }
+  
+      .card img {
+        width: 100%;
+        height: 230px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+  
+      .card button {
+        display: block;
+        width: 45%;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        background-color: #00447c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .card .button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+  
+  
+  
