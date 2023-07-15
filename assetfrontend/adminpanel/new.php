@@ -20,6 +20,8 @@ include "libs/load.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href='https://fonts.googleapis.com/css?family=Reem Kufi' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
     <script src="vendor/assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/sidebars.js"></script></body>
     <link href="css/new.css" rel="stylesheet">
@@ -40,21 +42,21 @@ include "libs/load.php";
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header modal-header-custom">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">CREATE</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color:white" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body modal-body-custom">
                   <form>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">School ID</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       <div id="emailHelp" class="form-text">Enter a new School Id to add new school.</div>
                     </div>
+                  <button type="button" class="btn btn-bd-modal-custom">create</button>
                   </form>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">CREATE</button>
+                <div class="modal-footer modal-footer-custom">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
                 </div>
               </div>
             </div>
@@ -77,7 +79,7 @@ include "libs/load.php";
                 <h1 class="modal-title fs-5" id="exampleModalLabel">UPDATE</h1>
                 <button type="button" class="btn-close" style="background-color:white" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body">
+              <div class="modal-body modal-body-custom">
                 <div class="accordion accordion-flush" id="accordionFlushTwo">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -89,7 +91,7 @@ include "libs/load.php";
                       <div class="accordion-body">
                         <form>
                           <fieldset disabled>
-                            <legend>updated details</legend>
+                            <legend>Updated Details</legend>
                             <div class="mb-3">
                               <label for="disabledTextInput" class="form-label">School name</label>
                               <input type="text" id="disabledTextInput" class="form-control" placeholder="Name">
@@ -105,7 +107,7 @@ include "libs/load.php";
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Confirm</label>
                           </div>
-                          <button type="button" class="btn btn-primary">UPDATE</button>
+                          <button type="button" class="btn btn-bd-modal-custom">update</button>
                         </form>
                       </div>
                     </div>
@@ -121,7 +123,7 @@ include "libs/load.php";
                       <div class="accordion-body">
                         <form>
                           <fieldset disabled>
-                            <legend>updated details</legend>
+                            <legend>Updated Details</legend>
                             <div class="mb-3">
                               <label for="disabledTextInput" class="form-label">School name</label>
                               <input type="text" id="disabledTextInput" class="form-control" placeholder="Name">
@@ -137,15 +139,15 @@ include "libs/load.php";
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Confirm</label>
                           </div>
-                          <button type="button" class="btn btn-primary">UPDATE</button>
+                          <button type="button" class="btn btn-bd-modal-custom">update</button>
                         </form>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <div class="modal-footer modal-footer-custom">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
               </div>
             </div>
           </div>
@@ -155,10 +157,10 @@ include "libs/load.php";
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header modal-header-custom">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Verify</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">VERIFY</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color:white" aria-label="Close"></button>
               </div>
-              <div class="modal-body">
+              <div class="modal-body modal-body-custom">
                 <div class="accordion accordion-flush" id="accordionFlushOne">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -186,7 +188,7 @@ include "libs/load.php";
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Confirm</label>
                           </div>
-                          <button type="button" class="btn btn-primary">Verify</button>
+                          <button type="button" class="btn btn-bd-modal-custom">verify</button>
                         </form>
                       </div>
                     </div>
@@ -217,15 +219,15 @@ include "libs/load.php";
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Confirm</label>
                           </div>
-                          <button type="button" class="btn btn-primary">Verify</button>
+                          <button type="button" class="btn btn-bd-modal-custom">verify</button>
                         </form>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <div class="modal-footer modal-footer-custom">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
               </div>
             </div>
             </div>

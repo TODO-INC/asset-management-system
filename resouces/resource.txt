@@ -5,3 +5,5 @@ font-family: 'Reem Kufi';font-size: 22px;
 https://www.w3schools.com/howto/tryit.asp?font=Reem%20Kufi
 
 https://www.w3schools.com/howto/tryit.asp?font=Aldrich
+
+https://www.w3schools.com/howto/tryit.asp?font=Glegoo
