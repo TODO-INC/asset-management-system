@@ -18,23 +18,223 @@ include "libs/load.php";
     <link href="vendor/assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/sidebars.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Reem Kufi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
     <script src="vendor/assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/sidebars.js"></script></body>
     <link href="css/new.css" rel="stylesheet">
   </head>
 </head>
 <body>
-<main class="d-flex flex-nowrap">
-  <?php load_temp("sidebar.php"); ?>
-  <div class="container d-flex flex-column  p-2 bg-body-tertiary custom-container">
-    <div  class="container container-md ">
-      <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-      Nobis fugiat delectus aliquid fuga, repellendus blanditiis ratione recusandae quaerat, 
-      molestias debitis itaque eaque? Fugit, eaque, sunt ratione quam tempore optio accusantium temporibus
-      nostrum non distinctio autem! Commodi accusamus cum aliquid ab nisi exercitationem repellat corporis 
-      obcaecati nam. Rem harum asperiores vel!</p>
+  <main class="d-flex flex-nowrap">
+    <?php load_temp("sidebar.php"); ?>
+    <div class="container d-flex flex-column text-center p-2 bg-body-tertiary custom-container">
+      <!-- CARD ONE -->
+      <div class="card text-center custom-card">
+        <div class="card-header card-new-header">NEW</div>
+        <div class="card-body card-new-body">
+          <p class="card-text">Create new School ID to add a School</p>
+          <button type="button" class="btn btn-bd-card-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">create</button>
+          <!-- Modal for "Create" -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header modal-header-custom">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">CREATE</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color:white" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">School ID</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">Enter a new School Id to add new school.</div>
+                    </div>
+                  <button type="button" class="btn btn-bd-modal-custom">create</button>
+                  </form>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- CARD TWO -->
+    <div class="card text-center custom-card">
+      <div class="card-header card-new-header">VERIFY</div>
+      <div class="card-body card-new-body">
+        <p class="card-text">Update or Verify School ID to add a School</p>
+        <button type="button" class="btn btn-bd-card-custom" data-bs-toggle="modal" data-bs-target="#verify">verify</button>
+        <button type="button" class="btn btn-bd-card-custom" data-bs-toggle="modal" data-bs-target="#update">update</button>
+        
+        <!-- Modal for "Update" -->
+        <div class="modal fade" id="update" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header modal-header-custom">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">UPDATE</h1>
+                <button type="button" class="btn-close" style="background-color:white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body modal-body-custom">
+                <div class="accordion accordion-flush" id="accordionFlushTwo">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        XYZ School
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushTwo">
+                      <div class="accordion-body">
+                        <form>
+                          <fieldset disabled>
+                            <legend>Updated Details</legend>
+                            <div class="mb-3">
+                              <label for="disabledTextInput" class="form-label">School name</label>
+                              <input type="text" id="disabledTextInput" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                              <label for="disabledSelect" class="form-label">District</label>
+                              <select id="disabledSelect" class="form-select">
+                                <option>District 1</option>
+                              </select>
+                            </div>
+                          </fieldset>
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Confirm</label>
+                          </div>
+                          <button type="button" class="btn btn-bd-modal-custom">update</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                        ABC School
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushTwo">
+                      <div class="accordion-body">
+                        <form>
+                          <fieldset disabled>
+                            <legend>Updated Details</legend>
+                            <div class="mb-3">
+                              <label for="disabledTextInput" class="form-label">School name</label>
+                              <input type="text" id="disabledTextInput" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                              <label for="disabledSelect" class="form-label">District</label>
+                              <select id="disabledSelect" class="form-select">
+                                <option>District 1</option>
+                              </select>
+                            </div>
+                          </fieldset>
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Confirm</label>
+                          </div>
+                          <button type="button" class="btn btn-bd-modal-custom">update</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer modal-footer-custom">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for "Verify" -->
+        <div class="modal fade" id="verify" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header modal-header-custom">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">VERIFY</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color:white" aria-label="Close"></button>
+              </div>
+              <div class="modal-body modal-body-custom">
+                <div class="accordion accordion-flush" id="accordionFlushOne">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        XYZ School
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOneOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushOne">
+                      <div class="accordion-body">
+                        <form>
+                          <fieldset disabled>
+                            <legend>Details</legend>
+                            <div class="mb-3">
+                              <label for="disabledTextInput" class="form-label">School name</label>
+                              <input type="text" id="disabledTextInput" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                              <label for="disabledSelect" class="form-label">District</label>
+                              <select id="disabledSelect" class="form-select">
+                                <option>District 1</option>
+                              </select>
+                            </div>
+                          </fieldset>
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Confirm</label>
+                          </div>
+                          <button type="button" class="btn btn-bd-modal-custom">verify</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                        ABC School
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOneTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushOne">
+                      <div class="accordion-body">
+                        <form>
+                          <fieldset disabled>
+                            <legend>Details</legend>
+                            <div class="mb-3">
+                              <label for="disabledTextInput" class="form-label">School name</label>
+                              <input type="text" id="disabledTextInput" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                              <label for="disabledSelect" class="form-label">District</label>
+                              <select id="disabledSelect" class="form-select">
+                                <option>District 1</option>
+                              </select>
+                            </div>
+                          </fieldset>
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Confirm</label>
+                          </div>
+                          <button type="button" class="btn btn-bd-modal-custom">verify</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer modal-footer-custom">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</main>
+  </main>
 </body>
