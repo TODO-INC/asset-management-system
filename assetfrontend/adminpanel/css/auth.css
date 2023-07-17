@@ -1,0 +1,36 @@
+body {
+    height: 100%;
+}
+
+.form-signin {
+    margin-left: 60px;
+    max-width: 330px;
+    padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="text"] {
+    margin-bottom: -1px;
+}
+.form-signin input[type="password"] {
+    margin-bottom: -1px;
+}
+
+.custom-card{
+    width: 480px;
+    margin-top: 130px;
+    margin-left: 350px;
+}
+.btn-auth{
+    font-family: 'Reem Kufi';
+    margin-top: 10px;
+    background-color: #00447c;
+}
+.btn-auth:hover{
+    background-color: #002756;
+    color: white;
+}
+
