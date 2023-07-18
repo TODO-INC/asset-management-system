@@ -7,7 +7,6 @@ body {
     max-width: 330px;
     padding: 1rem;
 }
-
 .form-signin .form-floating:focus-within {
     z-index: 2;
 }
@@ -17,6 +16,22 @@ body {
 }
 .form-signin input[type="password"] {
     margin-bottom: -1px;
+}
+
+
+.form-signup .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signup input[type="text"] {
+    margin-bottom: -1px;
+}
+.form-signup input[type="password"] {
+    margin-bottom: -1px;
+}
+
+.form-signup input[type="password"].error {
+    border: 1px solid red;
 }
 
 .custom-card{

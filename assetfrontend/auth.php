@@ -13,7 +13,6 @@
     <link href='https://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
     <link rel="stylesheet" href="adminpanel/css/auth.css">
-    <script src="adminpanel/js/auth.js"> </script>
   </head>
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 <div class="card text-center custom-card ">
@@ -45,27 +44,31 @@
             </button>
         </p>
         <div class="collapse" id="collapseSignup">
-            <form name="signup" class="form-signin" action="/assetmanagement/assetfrontend/success.php"  onsubmit="return validateFormSignup()" method="post">
+            <form name="signup" id="signup-form" class="form-signup" action="/assetmanagement/assetfrontend/success.php"  method="post">
                 <div class="form-floating">
-                    <input name="school.id" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <input name="school.id" type="text" class="form-control" id="school.id" placeholder="name@example.com" required>
                     <label for="floatingInput">School ID</label>
                 </div>
                 <div class="form-floating">
-                    <input name="user.name" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <input name="user.name" type="text" class="form-control" id="user.name" placeholder="name@example.com" required>
                     <label for="floatingInput">User Name</label>
                 </div>
                 <div class="form-floating">
-                    <input name="user.password" type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                    <input name="user.password" type="password" class="form-control " id="user.password" placeholder="Password" required>
                     <label for="floatingPassword">Password</label>
                 </div>
                 <div class="form-floating ">
-                    <input name="user.retype.password" type="password" class="form-control " id="floatingPassword" placeholder="Password" required>
-                    <label for="floatingPassword">Retype Password</label>
+                    <input name="user.retype.password" type="password" class="form-control " id="user.retype.password" placeholder="Password" required>
+                    <label for="user.retype.password">Retype Password</label>
                 </div>
                 <button class=" btn btn-bd-primary btn-auth w-100 py-2" type="submit">Sign up</button>
             </form>
-        </div
+            
+    <script src="adminpanel/js/auth.js"> </script>
+</div>
         </div>
 </div>
 </body>
 </html>
+
+<!-- onsubmit="return validateFormSignup()"  -->
