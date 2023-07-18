@@ -39,7 +39,7 @@
             </form>
         </div>
     
-        <p><button class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSignup" aria-expanded="false" aria-controls="collapseSignup"> 
+        <p><button class="btn btn-primary" id="signup-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSignup" aria-expanded="true" aria-controls="collapseSignup"> 
             Didn't have an account ? Sign Up
             </button>
         </p>
@@ -47,26 +47,30 @@
             <form name="signup" id="signup-form" class="form-signup" action="/assetmanagement/assetfrontend/success.php"  method="post">
                 <div class="form-floating">
                     <input name="school.id" type="text" class="form-control" id="school.id" placeholder="name@example.com" required>
-                    <label for="floatingInput">School ID</label>
+                    <label for="school.id">School ID</label>
                 </div>
                 <div class="form-floating">
                     <input name="user.name" type="text" class="form-control" id="user.name" placeholder="name@example.com" required>
-                    <label for="floatingInput">User Name</label>
+                    <label for="user.name">User Name</label>
                 </div>
                 <div class="form-floating">
                     <input name="user.password" type="password" class="form-control " id="user.password" placeholder="Password" required>
-                    <label for="floatingPassword">Password</label>
+                    <label for="user.password">Password</label>
                 </div>
                 <div class="form-floating ">
                     <input name="user.retype.password" type="password" class="form-control " id="user.retype.password" placeholder="Password" required>
-                    <label for="user.retype.password">Retype Password</label>
+                    <label for="user.retype.password">Confirm Password</label>
                 </div>
                 <button class=" btn btn-bd-primary btn-auth w-100 py-2" type="submit">Sign up</button>
             </form>
-            
-    <script src="adminpanel/js/auth.js"> </script>
+
+
 </div>
-        </div>
+</div>
+<script src="adminpanel/js/auth.js"> </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </div>
 </body>
 </html>

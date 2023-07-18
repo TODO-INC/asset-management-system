@@ -20,63 +20,135 @@ function validateFormLogin() {
   }
 }
 
-function  validateFormSignup() {
-  let schoolId = document.forms["signup"]["school.id"].value;
-  let userName = document.forms["signup"]["user.name"].value;
-  let userPass = document.forms["signup"]["user.password"].value;
-  let userRePass = document.forms["signup"]["user.retype.password"].value;
-  var x=0;
-  // if (schoolId != "#123") {
-  //   alert("Incorrect School Id");
-  //   x++;
-  //   return false;
-  // }
-  // if (userName.length <= 8 ) {
-  //   alert("Username length must be greater than 8");
-  //   x++;
-  //   return false;
-  // }
-  // if (userPass.length <=8) {
-  //   alert("Password length must be greater than 8");
-  //   x++;
-  //   return false;
-  // }
-  // if(userPass != userRePass ){
-  //   alert("Password must be same");
-  //   x++;
-  //   return false;
-  // }
-  // if(x === 0){
-  //   return true;
-  // }
-}
 
 
-const passwordInput = document.getElementById('user.password');
-const confirmPasswordInput = document.getElementById('user.retype.password');
+// const passwordInput = document.getElementById('user.password');
+// const confirmPasswordInput = document.getElementById('user.retype.password');
 
-function checkPasswordsMatch() {
-  const password = passwordInput.value;
-  const confirmPassword = confirmPasswordInput.value;
+// function checkPasswordsMatch() {
+//   const password = passwordInput.value;
+//   const confirmPassword = confirmPasswordInput.value;
 
-  if (password !== confirmPassword) {
-    passwordInput.classList.add('error');
-    confirmPasswordInput.classList.add('error');
-  } else {
-    passwordInput.classList.remove('error');
-    confirmPasswordInput.classList.remove('error');
-  }
-}
+//   if (password !== confirmPassword) {
+//     passwordInput.classList.add('error');
+//     confirmPasswordInput.classList.add('error');
+//   } else {
+//     passwordInput.classList.remove('error');
+//     confirmPasswordInput.classList.remove('error');
+//   }
+// }
 
-// Event listeners to check for password match on input change
-passwordInput.addEventListener('input', checkPasswordsMatch);
-confirmPasswordInput.addEventListener('input', checkPasswordsMatch);
+// // Event listeners to check for password match on input change
+// passwordInput.addEventListener('input', checkPasswordsMatch);
+// confirmPasswordInput.addEventListener('input', checkPasswordsMatch);
 
-// Event listener to prevent form submission if passwords don't match
-const signupForm = document.getElementById('signup-form');
-signupForm.addEventListener('submit', function (event) {
-  if (passwordInput.value !== confirmPasswordInput.value) {
-    event.preventDefault();
-    alert('Passwords do not match. Please try again.');
-  }
-});
+// // Event listener to prevent form submission if passwords don't match
+// const signupForm = document.getElementById('signup-form');
+// signupForm.addEventListener('submit', function (event) {
+//   if (passwordInput.value !== confirmPasswordInput.value) {
+//     event.preventDefault();
+//     alert('Passwords do not match. Please try again.');
+//   }
+// });
+
+
+// const passwordInput = document.getElementById('password');
+// const confirmPasswordInput = document.getElementById('confirm-password');
+// const signupForm = document.getElementById('signup-form');
+// const collapseButton = document.getElementById('collapse-button');
+
+// function checkPasswordsMatch() {
+//   const password = passwordInput.value;
+//   const confirmPassword = confirmPasswordInput.value;
+
+//   if (password !== confirmPassword) {
+//     passwordInput.classList.add('error');
+//     confirmPasswordInput.classList.add('error');
+//   } else {
+//     passwordInput.classList.remove('error');
+//     confirmPasswordInput.classList.remove('error');
+//   }
+// }
+
+
+
+
+// const passwordInput = document.getElementById('user.password');
+// const confirmPasswordInput = document.getElementById('user.retype.password');
+// const signupForm = document.getElementById('signup-form');
+// const collapseButton = document.getElementById('signup-collapse');
+
+// function checkPasswordsMatch() {
+//   const password = passwordInput.value;
+//   const confirmPassword = confirmPasswordInput.value;
+
+//   if (password !== confirmPassword) {
+//     passwordInput.classList.add('error');
+//     confirmPasswordInput.classList.add('error');
+//   } else {
+//     passwordInput.classList.remove('error');
+//     confirmPasswordInput.classList.remove('error');
+//   }
+// }
+
+// function handleSubmit(event) {
+//   if (passwordInput.value !== confirmPasswordInput.value) {
+//     event.preventDefault();
+//     alert('Passwords do not match. Please try again.');
+//   }
+// }
+
+// // Event listeners to check for password match on input change
+// passwordInput.addEventListener('input', checkPasswordsMatch);
+// confirmPasswordInput.addEventListener('input', checkPasswordsMatch);
+
+// // Event listener to prevent form submission if passwords don't match
+// signupForm.addEventListener('submit', handleSubmit);
+
+// // Event listener to handle form collapse
+// collapseButton.addEventListener('click', function () {
+//   const formContainer = document.getElementById('collapseSignup');
+//   formContainer.classList.toggle('collapsed');
+// });
+
+
+// Use Bootstrap's collapse events to toggle the form container
+// const collapseButton = document.getElementById('signup-collapse');
+// const formContainer = document.getElementById('collapseSignup');
+
+// collapseButton.addEventListener('click', function () {
+//   $(formContainer).collapse('toggle');
+// });
+
+// // The rest of the JavaScript code for password verification remains the same
+// const passwordInput = document.getElementById('user.password');
+// const confirmPasswordInput = document.getElementById('user.retype.password');
+// const signupForm = document.getElementById('signup-form');
+
+// function checkPasswordsMatch() {
+//   const password = passwordInput.value;
+//   const confirmPassword = confirmPasswordInput.value;
+
+//   if (password !== confirmPassword) {
+//     passwordInput.classList.add('error');
+//     confirmPasswordInput.classList.add('error');
+//   } else {
+//     passwordInput.classList.remove('error');
+//     confirmPasswordInput.classList.remove('error');
+//   }
+// }
+
+// function handleSubmit(event) {
+//   if (passwordInput.value !== confirmPasswordInput.value) {
+//     event.preventDefault();
+//     alert('Passwords do not match. Please try again.');
+//   }
+// }
+
+// // Event listeners to check for password match on input change
+// passwordInput.addEventListener('input', checkPasswordsMatch);
+// confirmPasswordInput.addEventListener('input', checkPasswordsMatch);
+
+// // Event listener to prevent form submission if passwords don't match
+// signupForm.addEventListener('submit', handleSubmit);
+

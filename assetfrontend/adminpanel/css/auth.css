@@ -18,7 +18,6 @@ body {
     margin-bottom: -1px;
 }
 
-
 .form-signup .form-floating:focus-within {
     z-index: 2;
 }
