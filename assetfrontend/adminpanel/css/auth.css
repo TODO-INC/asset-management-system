@@ -1,5 +1,6 @@
 body {
     height: 100%;
+    background-color: #eaeaea;
 }
 
 .form-signin {
@@ -23,10 +24,14 @@ body {
 }
 
 .form-signup input[type="text"] {
-    margin-bottom: -1px;
+    margin-bottom: 1px;
 }
+.form-signup input[type="text"].error {
+    border: 1px solid red;
+}
+
 .form-signup input[type="password"] {
-    margin-bottom: -1px;
+    margin-bottom: 1px;
 }
 
 .form-signup input[type="password"].error {
@@ -36,15 +41,46 @@ body {
 .custom-card{
     width: 480px;
     margin-top: 130px;
-    margin-left: 350px;
+    margin-left: 370px;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 1px;
+}
+.custom-card-header{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: #c6c3b6;
+    font-family: 'Reem Kufi';
+    font-size: 20px;
+    color: #002756;
+}
+.custom-card-body{
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: #dddace;
+    font-family: 'Glegoo';
 }
 .btn-auth{
     font-family: 'Reem Kufi';
     margin-top: 10px;
     background-color: #00447c;
+    border-color: #dddace;
 }
 .btn-auth:hover{
     background-color: #002756;
+    border-color: #dddace;
+    color: white;
+}
+
+.btn-base-auth{
+    font-family: 'League Spartan';
+    margin-top: 10px;
+    background-color: #0b7b9e;
+    border-color: #dddace;
+}
+.btn-base-auth:hover{
+    background-color: #035b7a;
+    border-color: #dddace;
     color: white;
 }
 
