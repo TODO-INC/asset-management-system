@@ -18,21 +18,9 @@ body{
   min-width: 100px;
   max-width: 500px;
 }
+
 .btn-lg{
   background-color: #002756;
-  border: brown;
-}
-.form-control{
-  width: 250px;
-  max-width: 250px;
-  min-width: 50px;
-}
-.form-signup input[type="number"] {
-  margin-bottom: 1px;
-}
-
-input[type='number'].error-border {
-  border: 1px solid red;
 }
 
 
