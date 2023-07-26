@@ -10,7 +10,10 @@
     <title>Signup</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
-
+    <link href='https://fonts.googleapis.com/css?family=Reem Kufi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
     
     <script src="vendor/assets/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -19,7 +22,7 @@
     <link href="vendor/assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/signup.css" rel="stylesheet">
   </head>
-  <body class="bg-body-tertiary">
+  <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -137,12 +140,13 @@
             <input type="text" id="snumber" name="snumber" class="form-control" min="0" step="1" required>
             <span id="snumError" style="color: red;"></span>
             </div>
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Sign UP</button>
         </form>
       </div>
     </div>
   </main>
   
 </div>
+  </body>
 </html>
 <script src="js/signup.js"></script>
