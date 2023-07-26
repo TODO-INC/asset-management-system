@@ -1,12 +1,18 @@
+body{
+  background-color: #eaeaea;
+}
+
+
 .needs-validation{
   margin-top: 10%;
   margin-left: 50%;
   margin-bottom: 10%;
-  width: 50%;
-  background-color: #fff;
+  width: 60%;
+  color: #f1f2f3;
+  font-family: 'Glegoo';
   border-radius: 40px;
-  border-color: blue;
-  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+  background-color: #0b7b9e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   padding: 30px;
   min-width: 100px;
@@ -14,7 +20,7 @@
 }
 
 .btn-lg{
-  border-radius:70%;
+  background-color: #002756;
   border: brown;
   background-color: aliceblue;
 }
