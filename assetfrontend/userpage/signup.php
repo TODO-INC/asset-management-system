@@ -54,8 +54,8 @@
             </div>
             <div class="col-12">
               <label  class="form-label">SchoolType</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="stype" id="stype">
+                <div class="form-check" required>
+                    <input class="form-check-input" type="radio" name="stype" id="stype" required>
                     <label class="form-check-label" for="stype">
                       SSLC
                     </label>
@@ -71,7 +71,7 @@
             <div class="col-12">
               <label  class="form-label">Management Type</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="mantype" id="mantype">
+                    <input class="form-check-input" type="radio" name="mantype" id="mantype" required>
                     <label class="form-check-label" for="mantype">
                       Goverment
                     </label>
