@@ -43,7 +43,7 @@
   <main>
     <div class="row g-5 ">
       <div class="col-md-9 col-lg-8">
-        <form class="needs-validation form-signup" action="/assetmanagement/assetfrontend/success.php" onsubmit="return validateForminfo()" method="POST">
+        <form class="needs-validation form-signup" action="/assetmanagement/assetfrontend/success.php" onsubmit="return validateForminfo()" method="POST" validation>
           <div class="row g-3">
             <div class="col-sm-5">
               <label for="firstName" class="form-label">SchoolName</label><br>

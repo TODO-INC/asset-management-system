@@ -21,11 +21,6 @@ body{
 
 .btn-lg{
   background-color: #002756;
-  border: brown;
-  background-color: aliceblue;
-}
-.btn-lg:hover{
-  color: rgb(248, 5, 5);
 }
 
 
