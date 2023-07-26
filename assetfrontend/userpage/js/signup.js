@@ -58,7 +58,7 @@ function containsSpecialChar(inputString) {
 function containsLetter(inputString) {
   return /[a-zA-Z]/.test(inputString); 
 }
- function validsnumbers(){
+function validsnumbers(){
   const check=snumber.value;
   if(containsNumber(check) && containsSpecialChar(check) && containsLetter(check)){
     snumError.textContent="";
@@ -69,7 +69,11 @@ function containsLetter(inputString) {
     snumber.style.border = "1px solid red";
   }
 
- }
+}
+function validateForminfo(){
+  alert("Please enter");
+}
+ 
 
  pin.addEventListener('input', validatepin);
  year.addEventListener('input', validyear);
