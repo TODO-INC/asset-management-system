@@ -38,7 +38,78 @@ include "libs/load.php";
           </h2>
           <div id="panelsStayOpen-assetOne" class="accordion-collapse collapse ">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+              <div class="row g-3 mb-3 align-items-center">
+                <div class="col-auto">
+                  <label for="size" class="col-form-label">Size</label>
+                </div>
+                <div class="col-auto">
+                  <input type="number" id="size" class="form-control">
+                </div>
+                <div class="col-auto">
+                  <span class="form-text">
+                    in Sq feet.
+                  </span>
+                </div>
+                <div class="col-auto">
+                  <label for="cost" class="col-form-label">Building cost</label>
+                </div>
+                <div class="col-auto">
+                  <input type="number" id="cost" class="form-control">
+                </div>
+                <div class="col-auto">
+                  <span  class="form-text">
+                    in INR.
+                  </span>
+                </div>
+              </div>
+              <div class="row g-3 mb-2 align-items-center">
+                <div class="col-auto">
+                  <label for="fund" class="col-form-label"> Scheme </label>
+                </div>
+                <div class="col-4">
+                  <input class = "form-control" type="text" id="fund">
+                </div>
+                <div class="col-3">
+                  <span class="form-text">
+                    Scheme/Fund-name used for building
+                </div>
+                <div class="col-auto">
+                  <label for="inaug" class="col-form-label">Date of Inauguration</label>
+                </div>
+                <div class="col-auto">
+                  <input id="inaug" type="date" class="form-control">
+                </div>
+              </div>
+
+              <div class="row g-3 md-5 align-items-center">
+                <div class="col-auto">
+                  <label for="floor" class="col-form-label">Total Floor</label>
+                </div>
+                <div class="col-auto">
+                  <input id="floor" type="number" class="form-control">
+                </div>
+                <div class="col-auto">
+                  <label for="room" class="col-form-label">Total Rooms</label>
+                </div>
+                <div class="col-auto">
+                  <input id="room" type="number" class="form-control">
+                </div>
+                <div class="col-auto">
+                  <label for="class" class="col-form-label">Total Class</label>
+                </div>
+                <div class="col-auto">
+                  <input id="class" type="number" class="form-control">
+                </div>
+                <div class="col-auto">
+                  <label for="labs" class="col-form-label">Total Labs</label>
+                </div>
+                <div class="col-auto">
+                  <input id="labs" type="number" class="form-control">
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>
