@@ -1,3 +1,7 @@
+*{
+  font-family: 'Reem Kufi';
+}
+
 .custom-container {
   background-color: #eaeaea; 
   padding: 20px; /* Padding around the content */
@@ -5,7 +9,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
 }
   .search-bar-container{
-    font-family: 'Glegoo';
     background-color: #0b7b9e;
     height: 105px;
     border: 1px solid #002756;
@@ -93,7 +96,6 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        font-family: 'League Spartan';
         font-weight: 600;
         color: white;
         background-color: #0b7b9e;
@@ -108,7 +110,6 @@
         justify-content: space-between;
       }
       .btn-bd-modal-custom {
-        font-family: 'League Spartan';
         font-weight: 600;
         color: white;
         background-color: #00447c;
@@ -121,7 +122,6 @@
 
     .custom-card{
       background-color: #dddace;
-      font-family: 'Aldrich';
       text-align: center;
       color: #002756;
     }

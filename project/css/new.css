@@ -1,5 +1,8 @@
+*{
+    font-family: 'Reem Kufi';
+}
+
 .custom-container {
-    background-color: #eaeaea; 
     padding: 20px; /* Padding around the content */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
@@ -32,11 +35,9 @@
     color: #002756;
 }
 .card-new-body p{
-    font-family: 'Aldrich';
     color: #00447c;
 }
 .btn-bd-card-custom {
-    font-family: 'League Spartan';
     font-weight: 600;
     color: white;
     background-color: #0b7b9e;
@@ -58,7 +59,6 @@
 
 .modal-body-custom{
     background-color: #dddace;
-    font-family: 'League Spartan';
 }
 
 .modal-body-custom label{
@@ -67,7 +67,6 @@
 }
 
 .btn-bd-modal-custom {
-    font-family: 'League Spartan';
     font-weight: 600;
     color: white;
     background-color: #00447c;
@@ -78,7 +77,6 @@
 }
 
 .modal-footer-custom{
-    font-family: 'League Spartan';
     background-color: #00447c;
     color:#eaeaea;
     text-align: center;

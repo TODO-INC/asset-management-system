@@ -12,7 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
-    <link rel="stylesheet" href="adminpanel/css/auth.css">
+    <link rel="stylesheet" href="../css/auth.css">
   </head>
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 <div class="card text-center custom-card ">
@@ -26,7 +26,7 @@
             </button>
         </p>
         <div class="collapse" id="collapseLogin">
-            <form name="login" action="/assetmanagement/assetfrontend/success.php" class="form-signin" onsubmit="return validateFormLogin()" method="post" >
+            <form name="login" action="/assetmanagement/project/html/" class="form-signin" onsubmit="return validateFormLogin()" method="post" >
                 <div class="form-floating">
                     <input type="text" name="user.name"  class="form-control" id="floatingInput" placeholder="name@example.com" required>
                     <label for="floatingInput">User Name</label>
@@ -44,7 +44,7 @@
             </button>
         </p>
         <div class="collapse" id="collapseSignup">
-            <form name="signup" id="signup-form" class="form-signup" action="/assetmanagement/assetfrontend/success.php"  method="post">
+            <form name="signup" id="signup-form" class="form-signup" action="/assetmanagement/project/html/"  method="post">
                 <div class="form-floating">
                     <input name="school.id" type="text" class="form-control" id="school.id"  required>
                     <label for="school.id">School ID</label>
