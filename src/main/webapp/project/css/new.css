@@ -1,0 +1,83 @@
+*{
+    font-family: 'Reem Kufi';
+}
+
+.custom-container {
+    padding: 20px; /* Padding around the content */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.custom-container p{
+    font-family: 'Reem Kufi';
+}
+
+.custom-card {
+    border-color: #035b7a;
+    border-width: 2px;
+    width: 700px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 0 auto; */
+}
+
+.card-new-header{
+    background-color: #0b7b9e;
+    color: #c6c3b6;
+    font-family: 'Reem Kufi';
+    font-size: 20px;;
+}
+.card-new-body{
+    font-family: 'Glegoo';
+    font-size: 18px;
+    background-color: #dddace;
+    color: #002756;
+}
+.card-new-body p{
+    color: #00447c;
+}
+.btn-bd-card-custom {
+    font-weight: 600;
+    color: white;
+    background-color: #0b7b9e;
+}
+.btn-bd-card-custom:hover {
+    background-color: #035b7a;
+    color: white;
+}
+
+.modal-header-custom{
+    background-color: #00447c;
+    color:#eaeaea;
+    text-align: center;
+}
+.modal-header-custom .btn-close{
+    color:#eaeaea;
+    text-align: center;
+}
+
+.modal-body-custom{
+    background-color: #dddace;
+}
+
+.modal-body-custom label{
+    font-style: italic;
+    text-align: left ;
+}
+
+.btn-bd-modal-custom {
+    font-weight: 600;
+    color: white;
+    background-color: #00447c;
+}
+.btn-bd-modal-custom:hover {
+    background-color: #002756;
+    color: white;
+}
+
+.modal-footer-custom{
+    background-color: #00447c;
+    color:#eaeaea;
+    text-align: center;
+}

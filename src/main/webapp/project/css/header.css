@@ -1,0 +1,53 @@
+.custom-common-container{
+    background-color: #f2f3f4;
+    margin-top: 15px;
+    border-radius: 16px;
+}
+.custom-common-header{
+    height: 85px;
+}
+.custom-common-header p {
+    font-family: 'Reem kufi';
+    color: #00447c;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 25px;
+    position: relative;
+    margin: 20px;
+    padding: 5px;
+}
+.custom-common-header p:hover{
+    color: #00447c;
+}
+
+.custom-common-header a {
+    font-family: 'Reem kufi';
+    color: #035b7a;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 23px;
+    position: relative;
+    margin: 20px;
+    padding: 5px;
+}
+.custom-common-header a::before {
+    color: #035b7a;
+    content: ""; 
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 0; 
+    height: 2px;
+    color: #035b7a;
+    background-color: #035b7a;
+    transition: width 0.3s;
+}
+.custom-common-header a:hover{
+    color: #0b7b9e;
+}
+.custom-common-header a:hover::before {
+    width: 100%; 
+}
+
+
