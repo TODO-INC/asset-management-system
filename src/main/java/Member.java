@@ -1,17 +1,16 @@
 public class Member 
 {
-	private String uname,password,email,phone;
+	private String uname,password,id;
 
 	public Member() {
 		super();
 	}
 
-	public Member(String uname, String password, String email, String phone) {
+	public Member(String uname, String password, String id) {
 		super();
 		this.uname = uname;
 		this.password = password;
-		this.email = email;
-		this.phone = phone;
+		this.id = id;
 	}
 
 	public String getUname() {
@@ -30,20 +29,13 @@ public class Member
 		this.password = password;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getId() {
+		return id;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setId(String id) {
+		this.id = id;
 	}
 
-	public String getPhone() {
-		return phone;
-	}
-
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
 	
 }
