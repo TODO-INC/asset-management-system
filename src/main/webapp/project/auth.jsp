@@ -41,7 +41,7 @@
             </button>
         </p>
         <div class="collapse" id="collapseSignup">
-            <form name="signup" id="signup-form" class="form-signup" action="/assetmanagement/project/"  method="post">
+            <form name="signup" id="signup-form" class="form-signup" action="../SignUp"  method="post">
                 <div class="form-floating">
                     <input name="school.id" type="text" class="form-control" id="school.id"  required>
                     <label for="school.id">School ID</label>
@@ -69,5 +69,3 @@
 <script src="js/auth.js"></script>
 </body>
 </html>
-
-<!-- onsubmit="return validateFormSignup()"  -->
