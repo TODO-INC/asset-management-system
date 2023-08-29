@@ -57,26 +57,26 @@ public class RegisterDao {
             }
         }
     }
-    public String signup(Member member) {
-        try {
-            loadDriver(dbdriver);  // Assuming this method loads the database driver
+    public String signup(String uname, String password, String id) {
+    	try {
+            loadDriver(dbdriver);
             con = DriverManager.getConnection(dburl, dbuname, dbpassword);
             
-            String sql = "insert into auth values(?,?,?)";
-            String result = "Data Entered Successfully"; // This line seems redundant
-            
+            String sql = "insert into auth values('" + id + "','" + uname + "','" + password + "')";
             try {
-                PreparedStatement ps = con.prepareStatement(sql);
-                ps.setString(1, member.getId());
-                ps.setString(2, member.getUname());
-                ps.setString(3, member.getPassword());
-                ps.executeUpdate();
+                Statement statement = con.createStatement();
+                int rowsAffected = statement.executeUpdate(sql);
+                statement.close();
+                
+                if (rowsAffected > 0) {
+                    return "Data Entered Successfully";
+                } else {
+                    return "Data Not Entered Successfully";
+                }
             } catch (SQLException e) {
-                result = "Data Not Entered Successfully";
                 e.printStackTrace();
+                return "Data Not Entered Successfully";
             }
-            return result;
-            
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
             return "Data Not Entered Successfully";

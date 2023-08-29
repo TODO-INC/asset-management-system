@@ -35,9 +35,8 @@ public class SignUp extends HttpServlet {
 		String uname=request.getParameter("user.name");
 		String password=request.getParameter("user.password");
 		String id=request.getParameter("school.id");
-		Member member=new Member(uname, password, id);
 		RegisterDao rdao=new RegisterDao();
-		String result=rdao.signup(member);
+		String result=rdao.signup(uname,password,id);
 		response.getWriter().println(result);
 		
 		
