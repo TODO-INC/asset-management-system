@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head>
@@ -81,13 +83,13 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color:white" aria-label="Close"></button>
                 </div>
                 <div class="modal-body modal-body-custom">
-                  <form>
+                  <form action="../Register" method="post">
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">School ID</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">Enter a new School Id to add new school.</div>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="school" class="form-text">Enter a new School Id to add new school.</div>
                     </div>
-                  <button type="button" class="btn btn-bd-modal-custom">create</button>
+                  <button type="submit" value="submit" class="btn btn-bd-modal-custom">create</button>
                   </form>
                 </div>
                 <div class="modal-footer modal-footer-custom">
