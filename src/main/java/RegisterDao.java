@@ -74,7 +74,7 @@ public class RegisterDao {
                 statement.close();
                 
                 if (rowsAffected > 0 && rowsAffected2>0) {
-                    return "Data Entered Successfully";
+                    return "True";
                 } else {
                     return "Data Not Entered Successfully";
                 }

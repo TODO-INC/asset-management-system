@@ -23,14 +23,14 @@
             </button>
         </p>
         <div class="collapse" id="collapseLogin">
-            <form name="login" action="/assetmanagement/project/" class="form-signin" onsubmit="return validateFormLogin()" method="post" >
-                <div class="form-floating">
-                    <input type="text" name="user.name"  class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                    <label for="floatingInput">User Name</label>
+            <form name="login" action="../Login" class="form-signin" onsubmit="return validateFormLogin()" method="post" >
+                <div class="user.name">
+                    <input type="text" name="user.name"  class="form-control" id="user.name" placeholder="name@example.com" required>
+                    <label for="user.name">User Name</label>
                 </div>
-                <div class="form-floating">
-                    <input type="password" name="user.password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                    <label for="floatingPassword">Password</label>
+                <div class="user.password">
+                    <input type="password" name="user.password" class="form-control" id="user.password" placeholder="Password" required>
+                    <label for="user.password">Password</label>
                 </div>
                 <button class="btn btn-bd-primary btn-auth w-100 py-2" type="submit">Log in</button>
             </form>
