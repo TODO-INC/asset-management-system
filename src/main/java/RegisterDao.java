@@ -63,19 +63,24 @@ public class RegisterDao {
             con = DriverManager.getConnection(dburl, dbuname, dbpassword);
             
             String sql = "insert into auth values('" + id + "','" + uname + "','" + password + "')";
+            String sql2 = "UPDATE school_id SET used=? WHERE idschool_id=?";
             try {
+            	PreparedStatement ps = con.prepareStatement(sql2);
+                ps.setInt(1, 1);
+                ps.setString(2, id);
                 Statement statement = con.createStatement();
                 int rowsAffected = statement.executeUpdate(sql);
+                int rowsAffected2 = ps.executeUpdate();
                 statement.close();
                 
-                if (rowsAffected > 0) {
+                if (rowsAffected > 0 && rowsAffected2>0) {
                     return "Data Entered Successfully";
                 } else {
                     return "Data Not Entered Successfully";
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
-                return "Data Not Entered Successfully";
+                return e.getMessage();
             }
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
