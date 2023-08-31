@@ -36,9 +36,7 @@
             // Close the resources
             preparedStatement.close();
             connection.close();
-    %>
-            <p>School ID <strong><%= schoolId %></strong> has been added to the database.</p>
-    <%
+    		response.sendRedirect("project/new.jsp");
         } catch (Exception e) {
     %>
             <p>An error occurred: <%= e.getMessage() %></p>

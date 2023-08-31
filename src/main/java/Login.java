@@ -1,3 +1,5 @@
+
+
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -6,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Register
+ * Servlet implementation class Login
  */
-@WebServlet("/SignUp")
-public class SignUp extends HttpServlet {
+@WebServlet("/Login")
+public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public SignUp() {
+    public Login() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -32,18 +34,8 @@ public class SignUp extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String uname=request.getParameter("user.name");
-		String password=request.getParameter("user.password");
-		String id=request.getParameter("school.id");
-		RegisterDao rdao=new RegisterDao();
-		String result=rdao.signup(uname,password,id);
-		if(result.equals("True")) {
-			response.sendRedirect("project/index.jsp");
-		}else {
-			response.getWriter().println(result);
-		}
-		
-		
+		// TODO Auto-generated method stub
+		doGet(request, response);
 	}
 
 }
