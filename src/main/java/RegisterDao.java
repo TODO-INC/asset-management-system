@@ -1,4 +1,4 @@
-import java.sql.Connection;
+import java.sql.*;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -93,6 +93,28 @@ public class RegisterDao {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+        }
+    }
+    public String login(String username, String password) throws ClassNotFoundException {
+        try {
+        	loadDriver(dbdriver);
+            con = DriverManager.getConnection(dburl, dbuname, dbpassword);
+            String query = "SELECT * FROM auth WHERE username = ? AND password = ?";
+            try (PreparedStatement preparedStatement = con.prepareStatement(query)) {
+                preparedStatement.setString(1, username);
+                preparedStatement.setString(2, password);
+                try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                    if( resultSet.next()) {
+                    	return "True";
+                    }else {
+                    	return "False";
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            // Handle database errors here
+            return e.getMessage();
         }
     }
 

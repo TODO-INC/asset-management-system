@@ -38,7 +38,7 @@ public class SignUp extends HttpServlet {
 		RegisterDao rdao=new RegisterDao();
 		String result=rdao.signup(uname,password,id);
 		if(result.equals("True")) {
-			response.sendRedirect("project/index.jsp");
+			response.sendRedirect("project/index.html");
 		}else {
 			response.getWriter().println(result);
 		}

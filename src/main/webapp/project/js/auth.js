@@ -218,8 +218,8 @@ function handleSubmit(event) {
 }
 
 // Event listeners to check for password match on input change
-passwordInput.addEventListener('input', checkPasswordsMatch);
-confirmPasswordInput.addEventListener('input', checkPasswordsMatch);
+//passwordInput.addEventListener('input', checkPasswordsMatch);
+//confirmPasswordInput.addEventListener('input', checkPasswordsMatch);
 schoolIdInput.addEventListener('input', verifySchoolId);
 userNameInput.addEventListener('input', verifyUserName);
 
