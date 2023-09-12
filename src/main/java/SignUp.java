@@ -5,24 +5,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class Register
- */
 @WebServlet("/SignUp")
 public class SignUp extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public SignUp() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
@@ -38,7 +25,7 @@ public class SignUp extends HttpServlet {
 		RegisterDao rdao=new RegisterDao();
 		String result=rdao.signup(uname,password,id);
 		if(result.equals("True")) {
-			response.sendRedirect("project/index.html");
+			response.sendRedirect("project/form.html");
 		}else {
 			response.getWriter().println(result);
 		}

@@ -1,8 +1,4 @@
 import java.sql.*;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
 
 public class RegisterDao {
     static String dburl = "jdbc:mysql://localhost:3306/test";
@@ -114,6 +110,33 @@ public class RegisterDao {
         } catch (SQLException e) {
             e.printStackTrace();
             // Handle database errors here
+            return e.getMessage();
+        }
+    }
+    public String form(String school_id,String username, String name,String type,String management, String district, String taluka, String address, int building) throws ClassNotFoundException {
+    	try {
+    		loadDriver(dbdriver);
+            con = DriverManager.getConnection(dburl, dbuname, dbpassword);
+
+            PreparedStatement ps = con.prepareStatement("INSERT INTO school_detail (school_id, username, name, type, management, district, taluka, address, building) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            ps.setString(1, school_id);
+            ps.setString(2, username);
+            ps.setString(3, name);
+            ps.setString(4, type);
+            ps.setString(5, management);
+            ps.setString(6, district);
+            ps.setString(7, taluka);
+            ps.setString(8, address);
+            ps.setInt(9, building);
+
+            int i = ps.executeUpdate();
+            if (i > 0) {
+                return "True";
+            }else {
+            	return "False";
+            }
+
+        } catch (Exception e) {
             return e.getMessage();
         }
     }
