@@ -28,10 +28,10 @@
         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="asset.html">Asset</a>
+        <a class="nav-link" href="asset.jsp">Asset</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="profile.html">Profile</a>
+        <a class="nav-link" href="profile.jsp">Profile</a>
       </li>
     </ul>
   </nav>
