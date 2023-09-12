@@ -10,7 +10,7 @@ public class Form extends HttpServlet {
 
         response.setContentType("text/html");
 
-        String school_id = "#123432";
+        String school_id = request.getParameter("school_num");;
         String username = "test";
         String name = request.getParameter("school_name");
         String type = request.getParameter("school_type");
