@@ -37,116 +37,133 @@
       </li>
     </ul>
   </nav>
-</div>
-    <div class="container-md custom-container-asset">
-      <div class="accordion custom-accordion" id="accordionAsset">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-assetOne" aria-expanded="true" aria-controls="panelsStayOpen-assetOne">
-              Building A &nbsp; <span class="badge rounded-pill text-bg-info">updated</span>
-            </button>
-          </h2>
-          <div id="panelsStayOpen-assetOne" class="accordion-collapse collapse ">
-            <div class="accordion-body">
-
-              <div class="row g-3 mb-3 align-items-center">
-                <div class="col-auto">
-                  <label for="size" class="col-form-label">Size</label>
-                </div>
-                <div class="col-auto">
-                  <input type="number" id="size" class="form-control">
-                </div>
-                <div class="col-auto">
-                  <span class="form-text">
-                    in Sq feet.
-                  </span>
-                </div>
-                <div class="col-auto">
-                  <label for="cost" class="col-form-label">Building cost</label>
-                </div>
-                <div class="col-auto">
-                  <input type="number" id="cost" class="form-control">
-                </div>
-                <div class="col-auto">
-                  <span  class="form-text">
-                    in INR.
-                  </span>
-                </div>
-              </div>
-              <div class="row g-3 mb-2 align-items-center">
-                <div class="col-auto">
-                  <label for="fund" class="col-form-label"> Scheme </label>
-                </div>
-                <div class="col-4">
-                  <input class = "form-control" type="text" id="fund">
-                </div>
-                <div class="col-3">
-                  <span class="form-text">
-                    Scheme/Fund-name used for building
-                </div>
-                <div class="col-auto">
-                  <label for="inaug" class="col-form-label">Date of Inauguration</label>
-                </div>
-                <div class="col-auto">
-                  <input id="inaug" type="date" class="form-control">
-                </div>
-              </div>
-
-              <div class="row g-3 md-5 align-items-center">
-                <div class="col-auto">
-                  <label for="floor" class="col-form-label">Total Floor</label>
-                </div>
-                <div class="col-auto">
-                  <input id="floor" type="number" class="form-control">
-                </div>
-                <div class="col-auto">
-                  <label for="room" class="col-form-label">Total Rooms</label>
-                </div>
-                <div class="col-auto">
-                  <input id="room" type="number" class="form-control">
-                </div>
-                <div class="col-auto">
-                  <label for="class" class="col-form-label">Total Class</label>
-                </div>
-                <div class="col-auto">
-                  <input id="class" type="number" class="form-control">
-                </div>
-                <div class="col-auto">
-                  <label for="labs" class="col-form-label">Total Labs</label>
-                </div>
-                <div class="col-auto">
-                  <input id="labs" type="number" class="form-control">
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-assetTwo" aria-expanded="false" aria-controls="panelsStayOpen-assetTwo">
-            Building B
-            </button>
-          </h2>
-          <div id="panelsStayOpen-assetTwo" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-assetThree" aria-expanded="false" aria-controls="panelsStayOpen-assetThree">
-            Ground A
-            </button>
-          </h2>
-          <div id="panelsStayOpen-assetThree" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="card">
+    <div class="card-header">
+        Building A 
     </div>
+    <div class="card-body">
+        <p><strong>Size:</strong> 5000 Sq feet</p>
+        <p><strong>Building cost:</strong> 100,000 INR</p>
+        <p><strong>Scheme:</strong> Sample Scheme</p>
+        <p><strong>Date of Inauguration:</strong> September 13, 2023</p>
+        <p><strong>Total Floor:</strong> 5</p>
+        <p><strong>Total Rooms:</strong> 20</p>
+        <p><strong>Total Class:</strong> 10</p>
+        <p><strong>Total Labs:</strong> 4</p>
+    </div>
+</div>
+<div class="container custom-common-container mt-3 mb-3">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal">
+        <i class="bi bi-plus"></i> Add Asset
+    </button>
+</div>
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Add Building</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Add your form here -->
+                <form id="buildingForm">
+                    <div class="mb-3">
+                        <label for="sizeInput" class="form-label">Size (Sq feet)</label>
+                        <input type="number" class="form-control" id="sizeInput" name="size">
+                    </div>
+                    <div class="mb-3">
+                        <label for="costInput" class="form-label">Building Cost (INR)</label>
+                        <input type="number" class="form-control" id="costInput" name="cost">
+                    </div>
+                    <div class="mb-3">
+                        <label for="schemeInput" class="form-label">Scheme/Fund Name</label>
+                        <input type="text" class="form-control" id="schemeInput" name="scheme">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inaugInput" class="form-label">Date of Inauguration</label>
+                        <input type="date" class="form-control" id="inaugInput" name="inauguration">
+                    </div>
+                    <div class="mb-3">
+                        <label for="floorInput" class="form-label">Total Floors</label>
+                        <input type="number" class="form-control" id="floorInput" name="floors">
+                    </div>
+                    <div class="mb-3">
+                        <label for="roomsInput" class="form-label">Total Rooms</label>
+                        <input type="number" class="form-control" id="roomsInput" name="rooms">
+                    </div>
+                    <div class="mb-3">
+                        <label for="classInput" class="form-label">Total Classrooms</label>
+                        <input type="number" class="form-control" id="classInput" name="classrooms">
+                    </div>
+                    <div class="mb-3">
+                        <label for="labsInput" class="form-label">Total Labs</label>
+                        <input type="number" class="form-control" id="labsInput" name="labs">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" id="saveBuilding">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // Function to clear the form fields
+    function clearForm() {
+        document.getElementById("buildingForm").reset();
+    }
+
+    // When the modal is shown, clear the form
+    $('#editModal').on('shown.bs.modal', function () {
+        clearForm();
+    });
+
+    // Handle form submission
+    $('#saveBuilding').click(function () {
+        // Get form data
+        var size = $('#sizeInput').val();
+        var cost = $('#costInput').val();
+        var scheme = $('#schemeInput').val();
+        var inauguration = $('#inaugInput').val();
+        var floors = $('#floorInput').val();
+        var rooms = $('#roomsInput').val();
+        var classrooms = $('#classInput').val();
+        var labs = $('#labsInput').val();
+
+        // Prepare the data to send in the AJAX request
+        var formData = {
+            size: size,
+            cost: cost,
+            scheme: scheme,
+            inauguration: inauguration,
+            floors: floors,
+            rooms: rooms,
+            classrooms: classrooms,
+            labs: labs
+        };
+        console.log(formData);
+
+        // Make an AJAX request to your Java backend
+        $.ajax({
+            url: "../AssetInsert", // Replace with your actual Java endpoint URL
+            type: "POST",
+            data: formData,
+            success: function(response) {
+                // Handle the response from the backend as needed
+                console.log("Success:", response);
+
+                // Close the modal
+                location.reload();
+
+                // You can also update the card or refresh the page here
+            },
+            error: function(error) {
+                console.error("Error:", error);
+            }
+        });
+    });
+</script>

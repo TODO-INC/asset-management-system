@@ -39,9 +39,9 @@
   </nav>
 </div>
   <div class="container form-algin">
-<input id="username" name="username" type="text" style="display: none;" value="<%= username %>">
 
     <form method = "POST" action="../Form">
+    <input type="hidden" name="username" id="username" value="<%= request.getParameter("username") %>">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">School Name</label>
         <input type="text" class="form-control" id="school_name" name="school_name" aria-describedby="emailHelp" required>
