@@ -103,7 +103,7 @@
       </div>
       <div class="mb-3">
         <label class="form-label" for="noOfbuilding">No of Buildings</label>
-        <input class="form-control" type="number" id="noOfbuilding" name="noOfbuilding" required>
+        <input class="form-control" type="number" id="noOfbuilding" name="noOfbuilding" min=1 required>
       </div>
       <div class="mb-3">
         <label class="form-label" for="school_num">School Number</label>
