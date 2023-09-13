@@ -1,7 +1,9 @@
-import java.io.*;
-import javax.servlet.*;
+import java.io.IOException;
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/Form")
 public class Form extends HttpServlet {
@@ -10,8 +12,9 @@ public class Form extends HttpServlet {
 
         response.setContentType("text/html");
 
-        String school_id = request.getParameter("school_num");;
-        String username = "test";
+        String school_id = request.getParameter("school_num");
+        String username = request.getParameter("username");
+        System.out.println(username); // Use println instead of print
         String name = request.getParameter("school_name");
         String type = request.getParameter("school_type");
         String management = request.getParameter("management_type");
@@ -28,11 +31,9 @@ public class Form extends HttpServlet {
 			e.printStackTrace();
 		}
 		if(form.equals("True")) {
-			response.sendRedirect("project/index.html?id="+username);
+			response.sendRedirect("project/index.html?username="+username);
 		}else {
 			response.getWriter().println(form);
 		}
-
-        
     }
 }

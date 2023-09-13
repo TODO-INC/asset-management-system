@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+	<%
+	String username = request.getParameter("username");%>
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head>
@@ -11,7 +15,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href='https://fonts.googleapis.com/css?family=Reem Kufi' rel='stylesheet'>
-    <script src="js/header.js"></script>
     <link href="css/index.css" rel="stylesheet">
 </head>
 
@@ -20,19 +23,20 @@
   <div class="nav"></div>
   <nav class="nav custom-common-header">
     <ul>
-        <p class="nav-link" aria-current="page" href="#">ASSET MANAGER</p>
+       <a class="nav-link" aria-current="page" href="<%= "index.jsp?username=" + username %>">ASSET MANAGER</a>
     </ul>
     <ul class="nav ms-auto me-0"> <!-- Added ms-auto and me-0 classes -->
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link" aria-current="page" href="<%= "index.jsp?username=" + username %>">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="asset.jsp">Asset</a>
+       <a class="nav-link" href="<%= "asset.jsp?username=" + username %>">Asset</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="profile.jsp">Profile</a>
+        <a class="nav-link" href="<%= "profile.jsp?username=" + username %>">Profile</a>
       </li>
     </ul>
   </nav>
 </div>
+    
 </body>

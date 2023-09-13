@@ -28,7 +28,7 @@ public class Login extends HttpServlet {
 				e.printStackTrace();
 			}
 			if(login.equals("True")) {
-				response.sendRedirect("project/index.html?id="+uname);
+				response.sendRedirect("project/index.jsp?username="+uname);
 			}else {
 				response.getWriter().println(login);
 			}

@@ -25,7 +25,7 @@ public class SignUp extends HttpServlet {
 		RegisterDao rdao=new RegisterDao();
 		String result=rdao.signup(uname,password,id);
 		if(result.equals("True")) {
-			response.sendRedirect("project/form.html"+uname);
+			response.sendRedirect("project/form.jsp?username="+uname);
 		}else {
 			response.getWriter().println(result);
 		}
