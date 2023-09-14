@@ -19,6 +19,7 @@ public class AssetInsert extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Retrieve data from the modal form
         String size = request.getParameter("size");
+        String bname = request.getParameter("buildingName");
         String cost = request.getParameter("cost");
         String scheme = request.getParameter("scheme");
         String inaugurationDate = request.getParameter("inauguration");
@@ -65,7 +66,7 @@ public class AssetInsert extends HttpServlet {
             connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 
             // Insert data into the database
-            String sql = "INSERT INTO building_details (size, building_cost, scheme, inauguration_date, total_floors, total_rooms, total_classrooms, total_labs,username,id) VALUES (?, ?, ?, ?, ?, ?, ?, ?,?,?)";
+            String sql = "INSERT INTO building_details (size, building_cost, scheme, inauguration_date, total_floors, total_rooms, total_classrooms, total_labs,username,id,building_name) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,?,?)";
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, Integer.parseInt(size));
             preparedStatement.setBigDecimal(2, new BigDecimal(cost));
@@ -77,6 +78,7 @@ public class AssetInsert extends HttpServlet {
             preparedStatement.setInt(8, Integer.parseInt(totalLabs));
             preparedStatement.setString(9, username);
             preparedStatement.setString(10, username+count);
+            preparedStatement.setString(11, bname);
             preparedStatement.executeUpdate();
 
         } catch (ClassNotFoundException | SQLException e) {
