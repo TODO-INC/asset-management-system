@@ -67,6 +67,8 @@
             <div class="modal-body">
                 <!-- Add your form here -->
                 <form id="buildingForm">
+                
+    <input type="hidden" name="username" id="username" value="<%= request.getParameter("username") %>">
                     <div class="mb-3">
                         <label for="sizeInput" class="form-label">Size (Sq feet)</label>
                         <input type="number" class="form-control" id="sizeInput" name="size">
@@ -126,6 +128,7 @@
     $('#saveBuilding').click(function () {
         // Get form data
         var size = $('#sizeInput').val();
+        var username = $('#username').val();
         var cost = $('#costInput').val();
         var scheme = $('#schemeInput').val();
         var inauguration = $('#inaugInput').val();
@@ -138,6 +141,7 @@
         var formData = {
             size: size,
             cost: cost,
+            username : username,
             scheme: scheme,
             inauguration: inauguration,
             floors: floors,

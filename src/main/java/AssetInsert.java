@@ -8,6 +8,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Date;
+import java.sql.ResultSet;
 
 @WebServlet("/AssetInsert")
 public class AssetInsert extends HttpServlet {
@@ -25,9 +26,38 @@ public class AssetInsert extends HttpServlet {
         String totalRooms = request.getParameter("rooms");
         String totalClassrooms = request.getParameter("classrooms");
         String totalLabs = request.getParameter("labs");
+        String username = request.getParameter("username");
 
         Connection connection = null;
         PreparedStatement preparedStatement = null;
+        int count = 1;
+
+        if (username != null && !username.isEmpty()) {
+            try {
+            	Class.forName("com.mysql.cj.jdbc.Driver");
+                connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+
+                String sql = "SELECT COUNT(*) AS count FROM building_details WHERE username = ?";
+                PreparedStatement pc = connection.prepareStatement(sql);
+                pc.setString(1, username);
+
+                // Execute the query
+                ResultSet resultSet = pc.executeQuery();
+
+                // Retrieve the count
+                if (resultSet.next()) {
+                    count = resultSet.getInt("count");
+                }
+
+                // Close the resources
+                resultSet.close();
+                pc.close();
+                connection.close();
+            } catch (ClassNotFoundException | SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
 
         try {
             // Establish a database connection
@@ -35,7 +65,7 @@ public class AssetInsert extends HttpServlet {
             connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 
             // Insert data into the database
-            String sql = "INSERT INTO building_details (size, building_cost, scheme, inauguration_date, total_floors, total_rooms, total_classrooms, total_labs) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO building_details (size, building_cost, scheme, inauguration_date, total_floors, total_rooms, total_classrooms, total_labs,username,id) VALUES (?, ?, ?, ?, ?, ?, ?, ?,?,?)";
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, Integer.parseInt(size));
             preparedStatement.setBigDecimal(2, new BigDecimal(cost));
@@ -45,12 +75,13 @@ public class AssetInsert extends HttpServlet {
             preparedStatement.setInt(6, Integer.parseInt(totalRooms));
             preparedStatement.setInt(7, Integer.parseInt(totalClassrooms));
             preparedStatement.setInt(8, Integer.parseInt(totalLabs));
+            preparedStatement.setString(9, username);
+            preparedStatement.setString(10, username+count);
             preparedStatement.executeUpdate();
 
-            response.getWriter().write("Data saved successfully");
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
-            response.getWriter().write("Error: " + e.getMessage());
+            System.out.println(e.getMessage());
         } finally {
             try {
                 if (preparedStatement != null) {
