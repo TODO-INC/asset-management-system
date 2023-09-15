@@ -12,6 +12,7 @@ import java.sql.ResultSet;
 
 @WebServlet("/AssetInsert")
 public class AssetInsert extends HttpServlet {
+	private static final long serialVersionUID = 1L;
     private static final String DB_URL = "jdbc:mysql://localhost:3306/test";
     private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "password";
@@ -19,7 +20,7 @@ public class AssetInsert extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Retrieve data from the modal form
         String size = request.getParameter("size");
-        String bname = request.getParameter("buildingName");
+        String bname = request.getParameter("bname");
         String cost = request.getParameter("cost");
         String scheme = request.getParameter("scheme");
         String inaugurationDate = request.getParameter("inauguration");

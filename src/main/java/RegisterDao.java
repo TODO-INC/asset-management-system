@@ -1,7 +1,6 @@
 import java.sql.*;
-
 public class RegisterDao {
-    static String dburl = "jdbc:mysql://localhost:3306/test";
+	static String dburl = "jdbc:mysql://localhost:3306/test";
     static String dbuname = "root";
     static String dbpassword = "password";
     static String dbdriver = "com.mysql.cj.jdbc.Driver";

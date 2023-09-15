@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @WebServlet("/Login")
+
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -24,7 +25,7 @@ public class Login extends HttpServlet {
 			try {
 				login = rdao.login(uname,password);
 			} catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
+				// TODO Auto-generated catch   block
 				e.printStackTrace();
 			}
 			if(login.equals("True")) {
