@@ -1,9 +1,17 @@
 .form-algin{
     margin-top: 100px !important;
-    width: 400px;
+    background-color: whitesmoke;
+    margin-bottom : 5%;
+    width: 55%;
     border: solid 1px #242323;
     padding: 20px;
     box-shadow: 4px 4px 8px 8px rgba(83, 74, 74, 0.2);
 
-    
+}
+body {
+    height: 100%;
+    background-color: #eaeaea;
+}
+*{
+    font-family: 'Reem Kufi';
 }

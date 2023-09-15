@@ -92,8 +92,8 @@ try {
             
             <div class="container custom-common-container mt-3 mb-3">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal"">
-    <i class="bi bi-plus"></i> Add Asset
-</button>
+    				<i class="bi bi-plus"></i> Add Asset
+				</button>
 
             </div>
         </div>

@@ -3,6 +3,7 @@
 }
 
 body{
+    text-align: center;
     background-color: #eaeaea;
 }
 .custom-container-asset{
@@ -15,4 +16,19 @@ body{
     position: relative;
     top: 10px;
     margin-top: 10px;
+}
+.card-header{
+    font-size: 25px;
+    color: whitesmoke;
+    background-color: #002756;
+    border: none;
+}
+.card{
+    border: none;
+    background-color: #035b7a;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
 }

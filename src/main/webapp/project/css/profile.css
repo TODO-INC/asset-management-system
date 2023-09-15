@@ -4,20 +4,23 @@
 
 .main {
     margin-top: 100px;
-    margin-left: 325px;
     font-size: 28px;
     padding: 0 10px;
     width: 58%;
 }
 
 .main h2 {
-    color: #333;
+    text-align: center;
+    color: #035b7a;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 .main .card {
-    background-color: #fff;
+    text-align: center;
+    background-color: #0b7b9e;
+    color: whitesmoke;
+    font-size: large;
     border-radius: 18px;
     box-shadow: 1px 1px 8px 0 grey;
     height: auto;
