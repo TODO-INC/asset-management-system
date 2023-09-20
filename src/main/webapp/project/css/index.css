@@ -1,0 +1,13 @@
+*{
+    font-family: 'Reem Kufi';
+}
+.custom-common-container{
+    height: 80%;
+}
+
+h1{
+    color: #0b7b9e;
+}
+p{
+    font-size: 1.2rem;
+}

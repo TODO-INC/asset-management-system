@@ -25,7 +25,7 @@
         <div class="collapse" id="collapseLogin">
             <form name="login" action="../Login" class="form-signin" onsubmit="return validateFormLogin()" method="post" >
                 <div class="user.name">
-                    <input type="text" name="user.name"  class="form-control" id="user.name" placeholder="name@example.com" required>
+                    <input type="text" name="user.name"  class="form-control" id="user.name" placeholder="username" required>
                     <label for="user.name">User Name</label>
                 </div>
                 <div class="user.password">
