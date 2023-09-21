@@ -29,6 +29,7 @@ try {
         buildingInfo.put("totalRooms", resultSet.getInt("total_rooms"));
         buildingInfo.put("totalClass", resultSet.getInt("total_classrooms"));
         buildingInfo.put("totalLabs", resultSet.getInt("total_labs"));
+        buildingInfo.put("verify", resultSet.getInt("verified"));
         buildingInfoList.add(buildingInfo);
     }
 } catch (ClassNotFoundException | SQLException e) {
@@ -76,8 +77,15 @@ try {
             <div class="card mt-3 mb-3">
                 <div class="card-header">
                     <%= buildingInfo.get("buildingName") %>
+                    
                 </div>
                 <div class="card-body">
+                <% if ((int)buildingInfo.get("verify") == 0) { %>
+                    	<span class="badge text-bg-danger">Unverified</span>
+                    	<%}else{ %>
+                    	
+                    	<span class="badge text-bg-success">Verified</span>
+                    <%} %>
                     <p><strong>Size:</strong> <%= buildingInfo.get("size") %> Sq feet</p>
                     <p><strong>Building cost:</strong> <%= buildingInfo.get("cost") %> INR</p>
                     <p><strong>Scheme:</strong> <%= buildingInfo.get("scheme") %></p>
@@ -120,7 +128,7 @@ try {
                             </div>
                             <div class="mb-3">
                                 <label for="costInput" class="form-label">Building Cost (INR)</label>
-                                <input type="number" class="form-control" id="costInput" name="cost">
+                                <input type="number" min ="1" class="form-control" id="costInput" name="cost">
                             </div>
                             <div class="mb-3">
                                 <label for="schemeInput" class="form-label">Scheme/Fund Name</label>
@@ -132,19 +140,19 @@ try {
                             </div>
                             <div class="mb-3">
                                 <label for="floorInput" class="form-label">Total Floors</label>
-                                <input type="number" class="form-control" id="floorInput" name="floors">
+                                <input type="number" min="1" class="form-control" id="floorInput" name="floors">
                             </div>
                             <div class="mb-3">
                                 <label for="roomsInput" class="form-label">Total Rooms</label>
-                                <input type="number" class="form-control" id="roomsInput" name="rooms">
+                                <input type="number"min="1" class="form-control" id="roomsInput" name="rooms">
                             </div>
                             <div class="mb-3">
                                 <label for="classInput" class="form-label">Total Classrooms</label>
-                                <input type="number" class="form-control" id="classInput" name="classrooms">
+                                <input type="number" min="1" class="form-control" id="classInput" name="classrooms">
                             </div>
                             <div class="mb-3">
                                 <label for="labsInput" class="form-label">Total Labs</label>
-                                <input type="number" class="form-control" id="labsInput" name="labs">
+                                <input type="number" min="1" class="form-control" id="labsInput" name="labs">
                             </div>
                         </form>
                     </div>
