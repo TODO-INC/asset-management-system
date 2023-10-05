@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #name{
+            margin-bottom: 10px;
+        }
+        #warning{
+            color: red;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="ok.jsp">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"><br />
+        <p id="warning" class="">INVALID USERNAME !</p>
+        <label for="number">Age:</label>
+        <input type="number" name="number" id="number">
+        <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
